@@ -1,0 +1,23 @@
+#-----------------------------------------------------------------------------
+
+somar <- function(a){
+   unidade <- a %% 10
+   dezena <- (a %% 100) %/% 10
+   centenas <- a %/% 100
+   numero <- sum(unidade+dezena+centenas)
+   return(numero)
+   }
+somar(275)
+
+#-----------------------------------------------------------------------------
+
+somar_2 <- function(b){
+  letras <- as.character(b)
+  separados <- strsplit(letras,"")[[1]]
+  numerar <- as.numeric(separados)
+  somar <- sum(numerar)
+  return(somar)
+}
+somar_2(234)
+
+#-----------------------------------------------------------------------------
